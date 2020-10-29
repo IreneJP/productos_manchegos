@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+h1{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 5vw;
+    font-family: 'Arapey', serif;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+h3{
+    font-size: 1.3vw;
+}
+
+body{
+    padding-bottom: 5%;
+}
+
+.selection{
+    width: 80%;
+    margin: auto auto auto auto;
+    padding-top: 5%;
+    font-size: 1.5vw;
+}
+
+.badge{
+    margin-right: 1%;
+    background-color: #D199A5;
+    font-weight:normal;
+}
+
+#active{
+    background-color: #99223D;
+}
+
+
+.cards{ 
+    padding-top: 1%;   
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-gap: 3%;
+    width: 80%;
+    margin: auto auto auto auto;
+}
+
+.card{
+    border: solid 1px rgba(202, 196, 196, 0.741);
+    border-radius: 2%;
+    width: 100%;
+    height: fit-content;
+    padding: 5%;
+}
+
+.card img{
+    width: 60%;
+    margin: auto auto auto auto;
+    padding-bottom: 5%;
+}
+
+.title{
+    display: grid;
+    grid-template-columns:65% 25%;
+    grid-gap: 10%;
+    padding-top: 5%;
+}
+
+.information p{
+    font-size: 1vw;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.info{
+    display: grid;
+    grid-template-columns:20% 30%;
+    grid-gap: 50%;
+    padding-top: 15%;
+}
+
+.info button{ 
+    margin: auto auto auto auto;
+    width: 100%;
+    background-color: #99223D;
+    color: white;
+    font-size: 1vw;
+}
+
+#shopping{
+    font-size: 2vw;
+    margin: auto auto auto auto;
+}
+
+
+.arrowUp i{
+    color: black;
+    width: 5%;
+    font-size: 2vw;
+    margin-left: 95%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+        padding-bottom: 10%;
+    }
+
+    .selection{
+        width: 70%;
+        font-size: 2vw;
+    }
+
+    h2{
+        font-size: 2.5vw;
+    }
+
+    h3{
+        font-size: 2.4vw;
+    }
+
+    .cards{ 
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+        width: 70%;
+    }
+
+    .information p{
+        font-size: 2vw;
+    }
+
+    .info button{ 
+        font-size: 2vw;
+    }
+
+    #shopping{
+        font-size: 3vw;
+    }
+
+    .arrowUp i{
+        font-size: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .selection{
+        width: 50%;
+        font-size: 3vw;
+    }
+
+    h2{
+        font-size: 3.5vw;
+    }
+
+    h3{
+        font-size: 3.4vw;
+    }
+
+    .cards{ 
+        grid-template-columns: auto;
+        width: 50%;        
+        grid-gap: 2%;
+    }
+
+    .information p{
+        font-size: 3vw;
+    }
+
+    .info button{ 
+        font-size: 3vw;
+    }
+
+    #shopping{
+        font-size: 4vw;
+    }
+
+    .arrowUp i{
+        font-size: 4vw;
+    }
+}

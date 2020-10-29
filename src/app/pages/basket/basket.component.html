@@ -1,0 +1,95 @@
+<body>
+    <h1>{{'label.myBasket' | translate}}</h1>
+    <div class="myBasket">
+        <div class="products">
+            <div class="individualProduct">
+                <div>
+                    <img src="https://bodegasalianza.vteximg.com.br/arquivos/ids/158263-1000-1000/1761-1.jpg?v=636174102573900000" alt="">
+                </div>
+                <div>
+                    <h3>Titulo producto (x2)</h3>
+                    <p>{{'label.type' | translate}}</p>
+                    <p>{{'label.origin' | translate}}</p>
+                    <table id="quantity">
+                        <tr>
+                            <td>
+                                <button class="btn btn-light btn-sm">-</button>
+                                2
+                                <button class="btn btn-light btn-sm">+</button>
+                            </td>
+                        </tr>
+                    </table>                    
+                </div>
+                <div>
+                    <h3>5.90 <i class="fas fa-euro-sign"></i></h3>
+                </div>
+            </div>
+            <hr>
+            <div class="individualProduct">
+                <div>
+                    <img src="https://bodegasalianza.vteximg.com.br/arquivos/ids/158263-1000-1000/1761-1.jpg?v=636174102573900000" alt="">
+                </div>
+                <div>
+                    <h3>Titulo producto</h3>
+                    <p>{{'label.type' | translate}}</p>
+                    <p>{{'label.origin' | translate}}</p>
+                    <table id="quantity">
+                        <tr>
+                            <td>
+                                <button class="btn btn-light btn-sm">-</button>
+                                1
+                                <button class="btn btn-light btn-sm">+</button>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+                <div>
+                    <h3>2.95 <i class="fas fa-euro-sign"></i></h3>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="total">
+                <h2>{{'label.summary' | translate}}</h2>
+                <hr id="summaryBreak">
+                <table>
+                    <tr>
+                       <th >{{'label.product' | translate}}</th>
+                       <th class="priceRight">{{'label.price' | translate}}</th>
+                       </tr>
+                       <tr>
+                       <td>Product 1 sgszsrgv zsrgfdsagv zsrgzsdg</td>
+                       <td class="priceRight">3.99 <i class="fas fa-euro-sign"></i> </td>
+                       </tr>
+                       <tr>
+                       <td>Product 2</td>
+                       <td class="priceRight">10.24 <i class="fas fa-euro-sign"></i></td>
+                       </tr>
+                       <tr>
+                       <td>{{'label.discount' | translate}}</td>
+                       <td class="priceRight"> 0 <i class="fas fa-euro-sign"></i></td>
+                       </tr>
+                       <tr>
+                       <td>{{'label.shipping' | translate}}</td>
+                       <td id="totalHr"> 3.55 <i class="fas fa-euro-sign"></i> </td>
+                       </tr>
+                       <br><br>
+                       <tr class="totalBold">
+                           <td>{{'label.total' | translate}}</td>
+                           <td class="priceRight"> 17.78 <i class="fas fa-euro-sign"></i> </td>
+                       </tr>
+                    </table>
+            </div>
+            <div class="discountPay">
+                <div id="discount">
+                    <p>{{'label.discountCode' | translate}}</p>
+                    <input type="text">
+                    <button type="button" class="btn">{{'label.apply' | translate}}</button>
+                </div>
+                <div class="payment">            
+                    <button type="button" class="btn">{{'label.pay' | translate}}</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
