@@ -44,6 +44,10 @@ a:hover{
     padding-right: 10%;
 }
 
+#wines, #cheeses, #settings, #enter{
+    font-size: 1vw;
+}
+
 .form-inline{
     font-size: 1vw;
     width: 60%;
@@ -61,6 +65,9 @@ a:hover{
     .form-inline{
         grid-template-columns: 80% 18%;
         width: 75%;
+    }
+    #wines, #cheeses, #settings, #enter{
+        font-size: 2vw;
     }
 }
 
@@ -85,14 +92,17 @@ a:hover{
     
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 380px) {
     .navegationBar{
         grid-template-columns: 20% 80%;
         grid-gap:0%;
     }
+    #wines, #cheeses, #settings, #enter{
+        font-size: 3vw;
+    }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 310px) {
     .navegationBar{
         grid-template-columns: 10% 89%;
         grid-gap:0%;

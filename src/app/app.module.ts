@@ -56,7 +56,7 @@ export function translateFactory(provider:TranslateService){
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    CommonModule
+    CommonModule    
   ],
   providers: [
     TranslateService,

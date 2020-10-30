@@ -1,6 +1,75 @@
 <body>
     <div>
         <h1>{{"label.myAccount" | translate}}</h1>
-        
+        <nav class="selection">
+            <a class="badge badge-pill"  (click)="showUserInfo()">{{'label.userInfo' | translate}}</a>
+            <a class="badge badge-pill"  (click)="showShippingInfo()">{{'label.shippingInfo' | translate}}</a>
+            <a class="badge badge-pill">{{'label.orders' | translate}}</a>
+        </nav>
+
+        <div [hidden]="infoUser">
+            <h3>{{'label.userInfo' | translate}}</h3>
+            <form>
+                <div class="form-group">
+                    <label>{{'label.email' | translate}}</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp">
+                    
+                </div>
+                <div class="form-group">
+                    <label>{{'label.password' | translate}}</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">{{'label.firstName' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>{{'label.secondName' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+            </form>
+        </div>
+        <div [hidden]="shippingInfo">
+            <h3>{{'label.shippingInfo' | translate}}</h3>
+            <form>
+                <div class="form-group">
+                    <label for="">{{'label.firstName' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>{{'label.secondName' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="">{{'label.address' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="">{{'label.postalCode' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>{{'label.city' | translate}}</label>
+                    <input type="text" class="form-control" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h3>{{'label.orders' | translate}}</h3>
+        <div class="myOrders">
+            <img src="https://m.media-amazon.com/images/I/51f9genFQmL._AC_SS350_.jpg" alt="">
+            <div class="infoOrder">
+                <p>{{'label.orderDate' | translate}}</p>
+                <p>{{'label.productsNumber' | translate}}</p>
+                <p>{{'label.sent' | translate}}</p>
+                <p>{{'label.price' | translate}}</p>
+            </div>            
+        </div>
     </div>
 </body>
+
+
+
+
+
