@@ -28,6 +28,7 @@ import { TranslateService } from './shared/translate.service';
 //Pipe
 import { TranslatePipe } from './pipes/translate.pipe';
 import { BasketComponent } from './pages/basket/basket.component';
+import { LoginComponent } from './pages/login/login.component';
 
 export function translateFactory(provider:TranslateService){
   return () => provider.getData();
@@ -47,7 +48,8 @@ export function translateFactory(provider:TranslateService){
     SoftComponent,
     CuredComponent,
     SemiCuredComponent,
-    BasketComponent
+    BasketComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

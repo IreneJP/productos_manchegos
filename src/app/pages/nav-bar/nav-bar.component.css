@@ -24,9 +24,44 @@ a:hover{
   color:#99223D;
 }
 
-.dropdown-item{
+.fixed-top{
+    margin-top: 5%;
+}
+
+.outlineColor{
+    color:#99223D;
+    border-color: #99223D;
+    text-align: center;
+}
+
+.outlineColor:hover{
+    color: white;
+    border-color: white;
+    background-color:#99223D;
+}
+
+.dropdown-item i{
+    padding-right: 10%;
+}
+
+.form-inline{
     font-size: 1vw;
-    width: fit-content;
+    width: 60%;
+    grid-template-columns: 83% 15%;
+    display: grid;
+    grid-gap: 2%;
+    margin: auto 2% auto auto;
+}
+
+.modal-footer a{
+    font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 814px) {    
+    .form-inline{
+        grid-template-columns: 80% 18%;
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -39,19 +74,21 @@ a:hover{
         font-size: 3vw;
     }
 
-    .dropdown-item{
-        font-size: 1.5vw;
+    .form-control, .outlineColor{
+        font-size: 2vw;
     }
+
+    .form-inline{
+        width: 90%;
+        grid-template-columns: 78% 20%;
+    }
+    
 }
 
 @media only screen and (max-width: 350px) {
     .navegationBar{
         grid-template-columns: 20% 80%;
         grid-gap:0%;
-    }
-
-    .dropdown-item{
-        font-size: 2.5vw;
     }
 }
 

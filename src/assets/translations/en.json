@@ -26,6 +26,13 @@
     "label.pay": "Pay",
     "label.discountCode": "Discount code?",
     "label.apply": "Apply",
+    "label.search": "Search",
+    "label.loginAccount": "Sign into your account",    
+    "label.email": "Email address",
+    "label.password": "Password",
+    "label.enter": "Login",    
+    "label.rememberPassword": "Forgotten password?",
+    "label.register": "New user registration",
 
     "label.aboutUs": "About us",
     "label.pricacity": "Privacy policy",

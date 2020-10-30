@@ -28,6 +28,14 @@
     "label.pay": "Pagar",
     "label.discountCode": "¿Tienes un código de descuento?",
     "label.apply": "Aplicar",
+    "label.search": "Buscar",
+    "label.loginAccount": "Acceder a mi cuenta",
+    "label.email": "Dirección de email",
+    "label.password": "Contraseña",
+    "label.enter": "Entrar",
+    "label.rememberPassword": "¿No recuerdas tu contraseña?",
+    "label.register": "Registrar un nuevo usuario",
+
 
     "label.aboutUs": "Quiénes somos",
     "label.pricacity": "Política de privacidad",

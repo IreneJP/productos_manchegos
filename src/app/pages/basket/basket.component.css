@@ -92,15 +92,18 @@ font-size: 1.5vw;
     width: 100%;
 }
 
-#discount button{    
-    background-color: #D199A5;
-    color: white;
+.outlineColor{
+    color:#99223D;
+    border-color: #99223D;
+    text-align: center;
     font-size: 0.8vw;
     margin-top: 2%;
 }
 
-#discount  button:hover{    
-    background-color: #99223D;
+.outlineColor:hover{
+    color: white;
+    border-color: white;
+    background-color:#99223D;
 }
 
 .payment button{    

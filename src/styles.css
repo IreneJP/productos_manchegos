@@ -29,10 +29,12 @@ body{
     margin-right: 1%;
     background-color: #D199A5;
     font-weight:normal;
+    color: white;
 }
 
 #active{
     background-color: #99223D;
+    color: white;
 }
 
 
@@ -74,8 +76,8 @@ body{
 
 .info{
     display: grid;
-    grid-template-columns:20% 30%;
-    grid-gap: 50%;
+    grid-template-columns:25% 35%;
+    grid-gap: 40%;
     padding-top: 15%;
 }
 

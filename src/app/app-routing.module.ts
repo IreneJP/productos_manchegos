@@ -4,6 +4,7 @@ import { BasketComponent } from './pages/basket/basket.component';
 import { CheeseComponent } from './pages/cheese/cheese.component';
 import { CuredComponent } from './pages/cured/cured.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { LoginComponent } from './pages/login/login.component';
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { RedComponent } from './pages/red/red.component';
 import { RoseComponent } from './pages/rose/rose.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'curedCheeses', component:CuredComponent},
   {path: 'semi-curedCheeses', component:SemiCuredComponent},
   {path: 'basket', component: BasketComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'footer', component: FooterComponent}
 
 ];
