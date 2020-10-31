@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   public infoUser: boolean;
   public shippingInfo: boolean;
+  public badge: string;
+  public active: string;
 
   constructor() { 
-  this.infoUser = true;
+  this.infoUser = false;
   this.shippingInfo = true;
+  this.badge = "notActive";
+  this.active = "active";
   }
 
   showUserInfo(){
@@ -20,15 +24,16 @@ export class LoginComponent implements OnInit {
         }else{
             this.infoUser = true;
         }
+        if(this.shippingInfo){
+          this.shippingInfo = false;
+          this.active = (this.infoUser) ? "notActive" : "active";
+            }else{
+                this.shippingInfo = true;
+                this.active = (this.shippingInfo) ? "notActive" : "active";
+            }  
   }
 
-  showShippingInfo(){
-    if(this.shippingInfo){
-      this.shippingInfo = false;
-        }else{
-            this.shippingInfo = true;
-        }
-  }
+
 
   ngOnInit(): void {
   }

@@ -2,18 +2,15 @@
     <div>
         <h1>{{"label.myAccount" | translate}}</h1>
         <nav class="selection">
-            <a class="badge badge-pill"  (click)="showUserInfo()">{{'label.userInfo' | translate}}</a>
-            <a class="badge badge-pill"  (click)="showShippingInfo()">{{'label.shippingInfo' | translate}}</a>
-            <a class="badge badge-pill">{{'label.orders' | translate}}</a>
+            <a [ngClass]="{notActive: infoUser, active: !infoUser}" class="badge badge-pill"  (click)="showUserInfo()">{{'label.userInfo' | translate}}</a>
+            <a  [ngClass]="{notActive: shippingInfo, active: !shippingInfo}" class="badge badge-pill" (click)="showUserInfo()">{{'label.orders' | translate}}</a>
         </nav>
-
-        <div [hidden]="infoUser">
+        <div class="infoUser" [hidden]="infoUser">
             <h3>{{'label.userInfo' | translate}}</h3>
-            <form>
+            <form class="form1"> 
                 <div class="form-group">
                     <label>{{'label.email' | translate}}</label>
                     <input type="email" class="form-control" aria-describedby="emailHelp">
-                    
                 </div>
                 <div class="form-group">
                     <label>{{'label.password' | translate}}</label>
@@ -28,38 +25,52 @@
                     <input type="text" class="form-control" >
                 </div>
             </form>
-        </div>
-        <div [hidden]="shippingInfo">
+            <br>
+        <hr>
             <h3>{{'label.shippingInfo' | translate}}</h3>
             <form>
-                <div class="form-group">
-                    <label for="">{{'label.firstName' | translate}}</label>
-                    <input type="text" class="form-control" >
-                </div>
-                <div class="form-group">
-                    <label>{{'label.secondName' | translate}}</label>
-                    <input type="text" class="form-control" >
-                </div>
+                <div class="form2_1">
+                    <div class="form-group">
+                        <label for="">{{'label.firstName' | translate}}</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>{{'label.secondName' | translate}}</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>                
                 <div class="form-group">
                     <label for="">{{'label.address' | translate}}</label>
                     <input type="text" class="form-control" >
                 </div>
-                <div class="form-group">
-                    <label for="">{{'label.postalCode' | translate}}</label>
-                    <input type="text" class="form-control" >
-                </div>
-                <div class="form-group">
-                    <label>{{'label.city' | translate}}</label>
-                    <input type="text" class="form-control" >
-                </div>
+                <div class="shortForm">
+                    <div class="form-group">
+                        <label for="">{{'label.postalCode' | translate}}</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>{{'label.city' | translate}}</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label>{{'label.contactNumber' | translate}}</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>               
             </form>
+            <div class="buttons d-flex justify-content-end">
+                <button type="button" class="btn upload">Modificar cuenta</button> 
+                <button type="button" class="btn outlineColor">Eliminar  cuenta</button>
+            </div>
         </div>
     </div>
-    <div>
+    
+    <div  [hidden]="shippingInfo">
         <h3>{{'label.orders' | translate}}</h3>
         <div class="myOrders">
             <img src="https://m.media-amazon.com/images/I/51f9genFQmL._AC_SS350_.jpg" alt="">
             <div class="infoOrder">
+                <p>{{'label.orderNumber' | translate}}</p>
                 <p>{{'label.orderDate' | translate}}</p>
                 <p>{{'label.productsNumber' | translate}}</p>
                 <p>{{'label.sent' | translate}}</p>
