@@ -12,8 +12,8 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { WineComponent } from './pages/wine/wine.component';
-import { CheeseComponent } from './pages/cheese/cheese.component';
+import { WinesComponent } from './pages/wines/wines.component';
+import { CheesesComponent } from './pages/cheeses/cheeses.component';
 import { RedComponent } from './pages/red/red.component';
 import { WhiteComponent } from './pages/white/white.component';
 import { RoseComponent } from './pages/rose/rose.component';
@@ -29,6 +29,7 @@ import { TranslateService } from './shared/translate.service';
 import { TranslatePipe } from './pipes/translate.pipe';
 import { BasketComponent } from './pages/basket/basket.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CheeseComponent } from './pages/cheese/cheese.component';
 
 export function translateFactory(provider:TranslateService){
   return () => provider.getData();
@@ -39,8 +40,8 @@ export function translateFactory(provider:TranslateService){
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    WineComponent,
-    CheeseComponent,
+    WinesComponent,
+    CheesesComponent,
     TranslatePipe,
     RedComponent,
     WhiteComponent,
@@ -49,7 +50,8 @@ export function translateFactory(provider:TranslateService){
     CuredComponent,
     SemiCuredComponent,
     BasketComponent,
-    LoginComponent
+    LoginComponent,
+    CheeseComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,99 @@
+.productCard{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 59%;
+    grid-gap: 1%;
+    margin: auto auto auto auto;
+    padding: 1%;
+    align-items: center;
+}
+
+.productCard img{
+    width: 100%;
+    align-items: center;
+}
+
+.productCard h2{
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.summary{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: auto;
+    font-size: 1.3vw;
+    align-items: center;
+}
+
+.summary p{
+    margin: 0;
+}
+
+.infoCheese p{
+    font-size: 1.5vw; 
+}
+
+.priceShop{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: auto;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+#basketPrice{
+    font-size: 1.8vw;
+    margin-top: auto;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: left;    
+}
+
+#basketCheese{
+    font-size: 3vw;
+    margin-bottom: 0;
+    margin-top: auto;
+    text-align: right;
+}
+
+.arrow{
+    color: black;
+    width: 100%;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    .productCard{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .productCard{
+        width: 90%;
+        grid-template-columns: auto;
+    }
+    
+    .productCard h2{
+    font-size: 3.3vw;
+    }
+
+    .summary{
+    width: 60%;
+    font-size: 2vw;
+    }
+    
+    .infoCheese p{
+    font-size: 2.5vw; 
+    }
+    
+    #basketPrice{
+    font-size: 3vw;
+    }
+
+    #basketCheese{
+        font-size: 5vw;
+    }
+}

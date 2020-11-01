@@ -1,0 +1,14 @@
+.badge{
+    margin-right: 1%;
+    background-color: #D199A5;
+    font-weight:normal;
+    color: white;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #99223D;
+    color: white;
+    cursor: pointer;
+}
+
