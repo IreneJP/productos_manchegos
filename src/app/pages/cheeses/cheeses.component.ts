@@ -1,6 +1,7 @@
 import { CheesesService } from './../../shared/cheeses.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Cheese } from 'src/app/models/cheese';
 
 @Component({
   selector: 'app-cheese',
@@ -16,6 +17,11 @@ export class CheesesComponent implements OnInit {
   public badge: string;
   public active: string;
   public arrow: void;
+  public cheeses;
+  public cheese: Cheese;
+  public curedCheeses: Cheese [];
+  public semiCheeses: Cheese [];
+  public softCheeses: Cheese [];
 
   constructor( private cheesesService: CheesesService,  private router: Router) {
     this.showAllCheeses = false;
@@ -26,13 +32,8 @@ export class CheesesComponent implements OnInit {
     this.badge = "notActive";
     this.active = "active";
   }
-
-  goBack(){
-    this.cheesesService.backClicked()
-  }
-
-   
-  allCheeses(){
+     
+  getAllCheeses(){
     if(this.showAllCheeses){
       this.showAllCheeses = false;
         }else{
@@ -43,7 +44,7 @@ export class CheesesComponent implements OnInit {
     this.showSoftCheeses = true;
   }
 
-  curedCheeses(){
+  getCuredCheeses(){
     if(this.showCuredCheeses){
       this.showCuredCheeses = false;
         }else{
@@ -54,7 +55,7 @@ export class CheesesComponent implements OnInit {
     this.showSoftCheeses = true;
   }
 
-  semicuredCheeses(){
+  getSemicuredCheeses(){
     if(this.showSemicuredCheeses){
       this.showSemicuredCheeses = false;
         }else{
@@ -65,7 +66,7 @@ export class CheesesComponent implements OnInit {
     this.showSoftCheeses = true;
   }
 
-  softCheeses(){
+  getSoftCheeses(){
     if(this.showSoftCheeses){
       this.showSoftCheeses = false;
         }else{
@@ -76,25 +77,42 @@ export class CheesesComponent implements OnInit {
     this.showSemicuredCheeses = true;
   }
 
-  /*showCheeseInfo(){
-    if(this.cheeseInfo){
-      this.cheeseInfo = false;
-        }else{
-            this.cheeseInfo = true;
-        }
+  obtainAllCheeses(){
+    this.cheesesService.getCheeses().subscribe((data)=> {
+      this.cheeses = data;
+      });      
+  }
 
-    this.showAllCheeses = true;
-    this.showCuredCheeses = true;
-    this.showSemicuredCheeses = true;
-    this.showSoftCheeses = true;
-    this.selectionNav = true;
-  }*/
+  getOneCheese(product_id){
+    this.cheesesService.getInfoCheese(product_id).subscribe((data: Cheese)=> {
+    this.cheesesService.oneCheeseInfo= data[0];
+    this.router.navigate(["/", "cheese"]);
+    })
+  }
 
-  showCheeseInfo(){
-    this.router.navigate(["/", "cheese"])
+  obtainCuredCheeses(){
+    this.cheesesService.getCuredCheeses().subscribe((data: Cheese [])=> {
+      this.curedCheeses = data;
+      });     
+  }
+
+  obtainSemiCheeses(){
+    this.cheesesService.getSemicuredCheeses().subscribe((data: Cheese [])=> {
+      this.semiCheeses = data;
+      });      
+  }
+
+  obtainSoftCheeses(){
+    this.cheesesService.getSoftCheeses().subscribe((data : Cheese [])=> {
+      this.softCheeses = data;
+      });      
   }
 
   ngOnInit(): void {
+    this.obtainAllCheeses();
+    this.obtainCuredCheeses();
+    this.obtainSemiCheeses();
+    this.obtainSoftCheeses();
   }
 
 }

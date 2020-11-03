@@ -13,9 +13,12 @@ import { WhiteComponent } from './pages/white/white.component';
 import { WinesComponent } from './pages/wines/wines.component';
 import { CheesesComponent } from './pages/cheeses/cheeses.component';
 import { CheeseComponent } from './pages/cheese/cheese.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const routes: Routes = [
+  {path: 'home', component: HomeComponent},
   {path: 'navbar', component: NavBarComponent},
   {path: 'wines', component: WinesComponent},
   {path: 'redWines', component: RedComponent},
@@ -28,6 +31,7 @@ const routes: Routes = [
   {path: 'semi-curedCheeses', component:SemiCuredComponent},
   {path: 'basket', component: BasketComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'footer', component: FooterComponent}
 
 ];

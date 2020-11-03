@@ -47,7 +47,8 @@
     "label.password": "Password",
     "label.enter": "Login",    
     "label.rememberPassword": "Forgotten password?",
-    "label.register": "New user registration",
+    "label.registerNewUSer": "New user registration",
+    
 
     "label.aboutUs": "About us",
     "label.pricacity": "Privacy policy",

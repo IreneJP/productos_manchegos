@@ -8,6 +8,8 @@
     "label.rose": "Rosados",
     "label.all": "Todos",
     "label.manchegosCheeses": "Quesos Manchegos",
+    "label.manchegoCheese": "Queso Manchego",
+    "label.milk": "Leche",
     "label.goat": "de cabra",
     "label.sheep": "de oveja",
     "label.cow": "de vaca",
@@ -34,6 +36,7 @@
     "label.userInfo": "Información del usuario",
     "label.firstName": "Nombre",
     "label.secondName": "Apellidos",
+    "label.birthDate": "Fecha de nacimiento",
     "label.shippingInfo": "Información de envío", 
     "label.address": "Dirección",
     "label.postalCode": "Código Postal",
@@ -50,7 +53,8 @@
     "label.password": "Contraseña",
     "label.enter": "Entrar",
     "label.rememberPassword": "¿No recuerdas tu contraseña?",
-    "label.register": "Registrar un nuevo usuario",
+    "label.registerNewUSer": "Registrar un nuevo usuario",
+    "label.register": "Registrarse",
 
 
     "label.aboutUs": "Quiénes somos",

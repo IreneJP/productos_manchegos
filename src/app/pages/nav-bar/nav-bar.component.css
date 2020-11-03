@@ -12,6 +12,7 @@
 .nav1 img{
     width: 90%;
     padding-left: 5%;
+    cursor: pointer;
 }
 
 a{

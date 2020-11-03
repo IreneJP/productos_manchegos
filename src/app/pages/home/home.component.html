@@ -1,0 +1,62 @@
+
+    <div class="backgr">
+        <div>
+            <img src="../../../assets/redWine.jpg" alt="copa">
+        </div>
+        <div class="description">
+            <div class="title">
+                <h1>{{'label.products' | translate}}</h1> 
+                <img src="../../../assets/diputacion.png" alt="logo">
+            </div>
+            <div class="products">
+                <div>
+                    <h2>{{'label.wines' | translate}}</h2>
+                    <img src="../../../assets/wines.jpg" alt="wine" routerLink= "/wines">
+                </div>
+                <div>
+                    <h2>{{'label.cheeses' | translate}}</h2>
+                    <img src="../../../assets/cheeses.jpg"  alt="cheese" routerLink= "/cheeses">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="user">
+                <button class="btn outlineColor"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i> {{'label.enter' | translate}}</button>
+                <button class="btn outlineColor" routerLink= "/register"> <i class="fas fa-user-plus"></i> {{'label.register' | translate}}</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{'label.loginAccount'|translate}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">{{'label.email'|translate}}</label>
+                  <input type="email" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">{{'label.password'|translate}}</label>
+                  <input type="password" class="form-control">
+                </div>
+                <button type="submit" class="btn outlineColor">{{'label.enter'|translate}}</button>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-around">
+              <a>{{'label.rememberPassword'|translate}}</a>
+              <a>{{'label.registerNewUSer'|translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+    

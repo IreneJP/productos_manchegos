@@ -20,6 +20,11 @@ import { RoseComponent } from './pages/rose/rose.component';
 import { SoftComponent } from './pages/soft/soft.component';
 import { CuredComponent } from './pages/cured/cured.component';
 import { SemiCuredComponent } from './pages/semi-cured/semi-cured.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CheeseComponent } from './pages/cheese/cheese.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 //Service
@@ -27,9 +32,6 @@ import { TranslateService } from './shared/translate.service';
 
 //Pipe
 import { TranslatePipe } from './pipes/translate.pipe';
-import { BasketComponent } from './pages/basket/basket.component';
-import { LoginComponent } from './pages/login/login.component';
-import { CheeseComponent } from './pages/cheese/cheese.component';
 
 export function translateFactory(provider:TranslateService){
   return () => provider.getData();
@@ -51,7 +53,9 @@ export function translateFactory(provider:TranslateService){
     SemiCuredComponent,
     BasketComponent,
     LoginComponent,
-    CheeseComponent
+    CheeseComponent,
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

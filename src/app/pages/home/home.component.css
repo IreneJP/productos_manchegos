@@ -1,0 +1,151 @@
+.backgr{
+    display: grid;
+    grid-template-columns: 48% 52%;
+}
+
+.backgr img{
+    width: 100%;
+    margin-left: -3%;
+}
+
+.title{    
+    display: grid;
+    grid-template-columns:49% 50%;
+    grid-gap: 1%;
+    margin: auto auto auto auto;
+}
+
+.title h1{
+    text-align: right;
+}
+
+.title img{
+    width: 75%;
+}
+
+.products{
+    padding-top: 10%;
+    margin:auto auto auto auto;
+    display: grid;
+    grid-template-columns:48% 48%;
+    grid-gap: 4%;
+    width: 80%;
+    text-align: center;
+}
+
+.products img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+hr{
+    width: 90%;
+}
+
+.user{
+    width: 80%;   
+    margin:auto auto auto auto;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.outlineColor{
+    color:#99223D;
+    border-color: #99223D;
+    margin-left:2%;
+}
+
+.outlineColor:hover{
+    color: white;
+    border-color: white;
+    background-color:#99223D;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .backgr{
+        grid-template-columns: 40% 60%;
+    }
+
+    .backgr img{
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    .title{    
+        grid-template-columns:44% 50%;
+        grid-gap: 5%;
+        width: 80%;
+        margin-left: -0.5%;
+        align-items: center;
+    }
+    
+    .products{
+        margin:auto auto auto -2%;
+        width: 90%;
+    }
+    
+    .products img{
+        width: 100%;
+    }
+    
+    .user{ 
+        margin:auto auto auto -2%;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .backgr{
+        grid-template-columns: 35% 65%;
+    }
+
+    .backgr img{
+        width: 100%;
+        margin-left: -3%;
+    }
+    
+    .title{    
+        padding-top: 15%;
+        margin: auto auto auto -3%;
+    }
+    
+    .products{
+        padding-top: 13%;
+        margin:auto auto auto -25%;
+        width: 100%;
+    }
+
+    hr{
+        width: 100%;
+        margin-left: -27%;
+    }
+        
+    .user{
+        width: 100%;   
+        margin:auto auto auto -25%;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .products{
+        grid-template-columns:auto;
+        grid-gap: 5%;
+        width: 100%;
+    }
+
+    .outlineColor{
+        font-size: 2.5vw;
+    }
+
+    h2{
+        font-size: 3.5vw;
+    }
+
+    .user{
+        padding-top: 0%;
+    }
+}

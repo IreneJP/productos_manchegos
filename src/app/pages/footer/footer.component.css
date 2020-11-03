@@ -1,20 +1,19 @@
 nav{
    width:100%;
-   height: fit-content; 
    background: #E0E8E7;
-   align-items: center;
    position: fixed;
    bottom: 0px;
    left: 0px;  
 }
 
 a{
-    color: black;
+    color: gray;
     font-size: 0.8vw;
 }
 
 @media only screen and (max-width: 750px) {
     a{
-       font-size: 1.2vw;
+        padding: 1px 10px 1px 10px;
+        font-size: 8px;
     }
 }
