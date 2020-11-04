@@ -55,6 +55,16 @@
     "label.rememberPassword": "¿No recuerdas tu contraseña?",
     "label.registerNewUSer": "Registrar un nuevo usuario",
     "label.register": "Registrarse",
+    "label.correct": "Correcto",
+    "label.required": "Requerido",
+    "label.notMatch": "Las contraseñas ingresadas no coinciden",
+    "label.matched": "Las contraseñas coinciden",
+    "label.create": "Crear cuenta",
+    "label.created": "Usuario creado correctamente",
+    "label.notCreated": "Se ha producido un error. Usuario no creado",
+    "label.correctEmail": "El email debe de ser válido",
+    "label.characters": "La contraseña debe tener al menos 6 caracteres",
+
 
 
     "label.aboutUs": "Quiénes somos",

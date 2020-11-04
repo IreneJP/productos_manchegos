@@ -65,7 +65,7 @@ form{
     }
 
     .infoUser{
-        border-radius: 5%;
+        border-radius: 2%;
     }
 
     .form1, .shortForm{
@@ -76,4 +76,8 @@ form{
         padding-top: 18%;
         width: 80%;
     } 
+    
+    .form-group{
+        margin-bottom: 4%;
+    }
 }

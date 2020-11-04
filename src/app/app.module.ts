@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Module
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { TranslateService } from './shared/translate.service';
 //Pipe
 import { TranslatePipe } from './pipes/translate.pipe';
 
+
 export function translateFactory(provider:TranslateService){
   return () => provider.getData();
 }
@@ -62,7 +64,9 @@ export function translateFactory(provider:TranslateService){
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    CommonModule    
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     TranslateService,

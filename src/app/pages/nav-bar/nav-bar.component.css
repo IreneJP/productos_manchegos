@@ -59,7 +59,7 @@ a:hover{
 }
 
 .modal-footer a{
-    font-size: 0.8vw;
+    font-size: 10px;
 }
 
 @media only screen and (max-width: 814px) {    

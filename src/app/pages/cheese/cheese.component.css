@@ -96,3 +96,27 @@
         font-size: 5vw;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    
+    
+    .productCard h2{
+        font-size: 4.5vw;
+    }
+
+    .summary{
+        font-size: 2.9vw;
+    }
+    
+    .infoCheese p{
+        font-size: 4vw; 
+    }
+    
+    #basketPrice{
+        font-size: 4vw;
+    }
+
+    #basketCheese{
+        font-size: 7vw;
+    }
+}

@@ -145,8 +145,8 @@ app.get('/wines/:product_id', (req, res) => {
 
 //Create a user
 app.post("/user", function (req,res) {
-    var insert = "INSERT INTO `user`( `name`, `surname`, `email`, `password`) VALUES (?,?,?,?)";
-    var array = [req.body.name ,req.body.surname, req.body.email, req.body.password ];
+    var insert = "INSERT INTO `user`( `name`, `surname`, `birthDate`, `email`, `password`) VALUES (?,?,?,?,?)";
+    var array = [req.body.name, req.body.surname, req.body.birthDate, req.body.email, req.body.password ];
         connection.query(insert,array,function(err,result){
             if(!err){
                     if(!err){
@@ -161,8 +161,8 @@ app.post("/user", function (req,res) {
 
 //Update user
 app.put("/user", function(req,res){
-    var insert = "UPDATE `user` SET `name`= ?, `surname`= ?, `email`= ?,`password`= ? WHERE user_id = ? ";
-    var array = [req.body.name, req.body.surname, req.body.email, req.body.password, req.body.user_id];
+    var insert = "UPDATE `user` SET `name`= ?, `surname`= ?, `birthDate` = ?, `email`= ?,`password`= ? WHERE user_id = ? ";
+    var array = [req.body.name, req.body.surname, req.body.birthDate, req.body.email, req.body.password, req.body.user_id];
     connection.query(insert, array, function(err, result){
         if(!err){
             res.send(result);

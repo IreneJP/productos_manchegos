@@ -140,6 +140,10 @@ hr{
         grid-template-columns: auto;
     }
 
+    .form1{
+        padding-bottom: 4%;
+    }
+
     h3{
         font-size: 4vw;
     }
@@ -163,5 +167,17 @@ hr{
       font-size: 3vw;
       padding-left: 2%;
 
+    }
+
+    .infoUser{
+        border-radius: 0.5%;
+    }
+
+    .form-group{
+        margin-bottom: 4%;
+    }
+    
+    .body{
+        padding-bottom: 0;
     }
 }
